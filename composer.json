@@ -1,0 +1,50 @@
+{
+    "name": "schooldesk/schooldesk-twofactor",
+    "description": "Two-Factor Support for SchoolDesk",
+    "keywords": [
+        "u2f",
+        "security",
+        "otp"
+    ],
+    "homepage": "https://schooldesk.education",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel Brereton",
+            "email": "sam@sambrereton.net.au",
+            "homepage": "https://www.sambrereton.net.au",
+            "role": "SchoolDesk Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=8.2",
+        "laravel/framework": "^10.0",
+        "illuminate/auth": "^10.0",
+        "illuminate/config": "^10.0",
+        "illuminate/container": "^10.0",
+        "illuminate/events": "^10.0",
+        "illuminate/database": "^10.0",
+        "illuminate/session": "^10.0",
+        "illuminate/routing": "^10.0",
+        "illuminate/http": "^10.0",
+        "illuminate/contracts": "^10.0",
+        "illuminate/view": "^10.0",
+        "illuminate/translation": "^10.0",
+        "bacon/bacon-qr-code": "^2.0",
+        "pragmarx/google2fa": "^8.0",
+        "pragmarx/google2fa-laravel": "^2.0",
+        "pragmarx/google2fa-qrcode": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Northfire\\TwoFactor\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Northfire\\TwoFactor\\TwoFactorServiceProvider"
+            ]
+        }
+    }
+}
