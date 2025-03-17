@@ -1,4 +1,6 @@
-<?php namespace Northfire\TwoFactor;
+<?php
+
+namespace ForceDesk\TwoFactor;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
