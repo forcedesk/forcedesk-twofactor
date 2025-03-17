@@ -1,19 +1,19 @@
 {
-    "name": "schooldesk/schooldesk-twofactor",
-    "description": "Two-Factor Support for SchoolDesk",
+    "name": "forcedesk/forcedesk-twofactor",
+    "description": "Two-Factor Support for ForceDesk",
     "keywords": [
         "u2f",
         "security",
         "otp"
     ],
-    "homepage": "https://schooldesk.education",
+    "homepage": "https://forcedesk.io",
     "license": "MIT",
     "authors": [
         {
             "name": "Samuel Brereton",
             "email": "sam@sambrereton.net.au",
             "homepage": "https://www.sambrereton.net.au",
-            "role": "SchoolDesk Developer"
+            "role": "ForceDesk Developer"
         }
     ],
     "require": {
@@ -37,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Northfire\\TwoFactor\\": "src"
+            "ForceDesk\\TwoFactor\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Northfire\\TwoFactor\\TwoFactorServiceProvider"
+                "ForceDesk\\TwoFactor\\TwoFactorServiceProvider"
             ]
         }
     }
